@@ -43,3 +43,66 @@ El encargado realiza las siguientes acciones:
   - Se pierde la venta o se sugiere una alternativa
 
 ---
+
+### 5. Venta del producto
+
+- El cliente acepta el producto
+- Se realiza la venta
+- El registro de la venta se realiza de forma manual (papel o memoria)
+
+---
+
+### 6. Explicación del uso del medicamento
+
+- El encargado explica cómo utilizar el medicamento
+- En algunos casos:
+  - Los clientes (especialmente adultos mayores) no comprenden bien las instrucciones
+  - Se generan dudas o errores de interpretación
+
+---
+
+### 7. Control de inventario
+
+- Se revisa el inventario de forma manual diariamente
+- Se verifica qué productos hacen falta
+- Se identifican productos próximos a vencer o vencidos
+- Se realizan pedidos a proveedores cuando es necesario
+
+---
+
+### 8. Problemas en el proceso
+
+Durante el flujo se presentan los siguientes problemas:
+
+- Uso de registros manuales (ineficiencia y errores)
+- Falta de información clara sobre medicamentos
+- Dificultad en la dosificación de medicamentos para niños
+- Errores cuando otra persona atiende el negocio
+- Pérdida de tiempo en tareas repetitivas
+- Falta de control automatizado del inventario
+- Falta de registro de clientes
+
+---
+
+## Representación del flujo (pseudodiagrama)
+
+```text
+INICIO
+  ↓
+Cliente llega
+  ↓
+¿Sabe qué necesita?
+  ├── Sí → Buscar producto
+  └── No → Dar recomendación
+             ↓
+        Buscar producto
+  ↓
+¿Producto disponible?
+  ├── Sí → Mostrar producto → Venta → Registro manual
+  └── No → Informar → Fin
+  ↓
+Explicar uso del medicamento
+  ↓
+Actualizar inventario manualmente
+  ↓
+FIN
