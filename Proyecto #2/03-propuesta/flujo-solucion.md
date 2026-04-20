@@ -142,3 +142,5 @@ Actualizar inventario
 Guardar datos
   ↓
 FIN
+  ↓
+FIN
